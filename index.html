@@ -1,12 +1,129 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Rise Above Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rise Above Coaching — Personal & Professional Growth</title>
+    <meta name="description" content="One-on-one coaching to help you reach your personal and professional goals.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Rise Above Tutorial</h1>
-    <p>Your journey to success starts here.</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">Rise Above</a>
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="site-nav" id="primary-navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="cta">Book a Call</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Unlock Your Potential with Expert Coaching</h1>
+                    <p>Practical, accountable coaching to help you grow your career, business, and confidence.</p>
+                    <p class="hero-cta">
+                        <a href="#contact" class="btn primary">Book a Free Consultation</a>
+                        <a href="#services" class="btn outline">See Services</a>
+                    </p>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <img src="" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">How I Help</h2>
+                <div class="grid services-grid">
+                    <article class="card">
+                        <h3>Career Coaching</h3>
+                        <p>Interview prep, resume reviews, and career path planning tailored to your goals.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Leadership & Communication</h3>
+                        <p>Develop leadership presence, communication skills, and team influence.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Entrepreneur Coaching</h3>
+                        <p>Strategic planning, focus sessions, and growth tactics for founders and solopreneurs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="grid testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"I landed my dream job within 3 months — the coaching made all the difference."</p>
+                        <footer>— Priya, Product Manager</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Clear frameworks and accountability helped me scale my business."</p>
+                        <footer>— Ahmed, Founder</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-inner">
+                <h2 class="section-title">About Me</h2>
+                <p>I’m a certified coach with 8+ years helping professionals clarify goals, build confidence, and take consistent action.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Book a Free Consultation</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Tell me about your goals</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-row form-actions">
+                        <button type="submit" class="btn primary">Request Call</button>
+                        <div id="form-status" role="status" aria-live="polite"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Rise Above Coaching — All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+            </nav>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
