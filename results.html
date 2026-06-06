@@ -3,29 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rise Above — Home</title>
+  <title>Results & Testimonials — Rise Above</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">Rise Above</a>
-
-      <nav class="site-nav" id="primary-navigation">
+      <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="courses.html">Courses</a></li>
           <li><a href="faculty.html">Faculty</a></li>
-          <li><a href="results.html">Results</a></li>
+          <li><a href="results.html" class="active">Results</a></li>
           <li><a href="materials.html">Study Materials</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
       <div class="header-actions">
         <button id="login-btn" class="btn outline">Login</button>
-        <a href="#" id="signup-btn" class="btn primary">Sign Up</a>
+        <a href="" id="signup-btn" class="btn primary">Sign Up</a>
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -35,18 +33,18 @@
     </div>
   </header>
 
-  <main class="hero">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <h1>Unlock Your Potential with Expert Coaching</h1>
-        <p>Practical, accountable coaching to help you grow your career, business, and confidence.</p>
-        <p class="hero-cta">
-          <a href="contact.html" class="btn primary">Book a Free Consultation</a>
-          <a href="courses.html" class="btn outline">See Courses</a>
-        </p>
-      </div>
-      <div class="hero-image" aria-hidden="true">
-        <img src="" alt="Coaching session" />
+  <main class="results">
+    <div class="container">
+      <h1>Results & Testimonials</h1>
+      <div class="grid testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"I landed my dream job within 3 months — the coaching made all the difference."</p>
+          <footer>— Priya, Product Manager</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Clear frameworks and accountability helped me scale my business."</p>
+          <footer>— Ahmed, Founder</footer>
+        </blockquote>
       </div>
     </div>
   </main>
@@ -54,10 +52,6 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; <span id="year"></span> Rise Above Coaching — All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="#privacy">Privacy</a>
-        <a href="#terms">Terms</a>
-      </nav>
     </div>
   </footer>
 
